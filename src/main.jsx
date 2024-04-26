@@ -11,6 +11,8 @@ import AllTouristsSpot from './pages/AllTouristsSpot';
 import AddTouristsSpot from './pages/AddTouristsSpot';
 import MyList from './pages/MyList';
 import AuthContaxProvider from './AuthContaxProvider';
+import SpotDetails from './components/SpotDetails';
+// import SpotDetails from './components/SpotDetails';
 
 const router = createBrowserRouter([
   {
@@ -21,10 +23,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
+        loader:()=>fetch("http://localhost:5000/paradiceTours")
       },
       {
         path: "/allTouristsSpot",
         element: <AllTouristsSpot></AllTouristsSpot>,
+        loader:()=>fetch("http://localhost:5000/paradiceTours")
       },
       {
         path: "/addTouristsSpot",
@@ -42,6 +46,12 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register></Register>,
       },
+      {
+        path: "/item/:id",
+        loader:({params})=>fetch(`http://localhost:5000/paradiceTours/${params.id}`),       
+        element: <SpotDetails></SpotDetails>,
+      },
+
     ],
   },
 ]);

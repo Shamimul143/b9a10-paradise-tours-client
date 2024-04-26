@@ -52,19 +52,19 @@ const Register = () => {
                             <label className="label">
                                 <span className="label-text">Name</span>
                             </label>
-                            <input type="text" name="name" placeholder=" Your Name" className="input input-bordered" required />
+                            <input type="text" name="name" placeholder=" Your Name" className=" input input-bordered" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Email</span>
                             </label>
-                            <input type="email" name="email" placeholder="email" className="input input-bordered" required />
+                            <input type="email" name="email" placeholder="email" className=" input input-bordered" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">PhotoURL</span>
                             </label>
-                            <input type="url" name="photoUrl" placeholder="PhotoURL" className="input input-bordered" />
+                            <input type="url" name="photoUrl" placeholder="PhotoURL" className=" input input-bordered" />
                         </div>
                         <div className="form-control relative">
                             <label className="label">
@@ -86,7 +86,6 @@ const Register = () => {
                     <ToastContainer />
                 </div>
             </div>
-
         </div>
     );
 };
