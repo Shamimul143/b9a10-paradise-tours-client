@@ -31,7 +31,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link to="/ligin" className="py-1 px-4 rounded-lg text-white bg-[#478bca]">Login</Link>
+                <Link to="/login" className="py-1 px-4 rounded-lg text-white bg-[#478bca]">Login</Link>
             </div>
         </div>
     );

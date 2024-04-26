@@ -10,6 +10,7 @@ import Register from './components/Register';
 import AllTouristsSpot from './pages/AllTouristsSpot';
 import AddTouristsSpot from './pages/AddTouristsSpot';
 import MyList from './pages/MyList';
+import AuthContaxProvider from './AuthContaxProvider';
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthContaxProvider>
+      <RouterProvider router={router} />
+    </AuthContaxProvider>
   </React.StrictMode>,
 )
