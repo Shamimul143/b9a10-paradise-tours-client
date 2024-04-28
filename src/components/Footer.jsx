@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <div >
-            <footer className="footer footer-center p-10 text-base-content rounded">
+            <footer className="footer footer-center p-10  rounded bg-[#478bca] text-white mt-10">
                 <nav className="grid grid-flow-col gap-4">
                     <a className="link link-hover">About us</a>
                     <a className="link link-hover">Contact</a>

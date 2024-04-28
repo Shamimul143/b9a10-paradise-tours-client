@@ -11,7 +11,7 @@ const SpotItem = ({ item }) => {
 
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
-      <figure><img className='h-[300px] rounded-lg' src={imageUrl} alt="Shoes" /></figure>
+      <figure><img className='h-[300px] rounded-lg p-4' src={imageUrl} alt="Shoes" /></figure>
       <div className="card-body">
         <h2 className="card-title">{touristsSpotName}</h2>
         <p>Average Cost: {averageCost}</p>
