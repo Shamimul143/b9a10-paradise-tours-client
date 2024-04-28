@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import AllAuth from "./AllAuth";
 import { useState } from "react";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
@@ -10,6 +10,7 @@ const Register = () => {
     const { createRegister } = AllAuth()
     const [showPassword, setShowPassword] = useState(false)
     const [registerError, setRegisterError] = useState("")
+    const navigate = useNavigate();
 
     const handleRegister = (e) => {
         e.preventDefault()
@@ -32,6 +33,7 @@ const Register = () => {
             .then((result) => {
                 console.log(result.user);
                 toast.success("Register Successfully");
+                navigate("/")
                 e.target.reset();
             })
             .catch((error) => {

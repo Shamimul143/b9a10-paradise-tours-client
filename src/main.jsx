@@ -12,6 +12,8 @@ import AddTouristsSpot from './pages/AddTouristsSpot';
 import MyList from './pages/MyList';
 import AuthContaxProvider from './AuthContaxProvider';
 import SpotDetails from './components/SpotDetails';
+import UpdatePage from './pages/UpdatePage';
+import PrivateRoute from './components/PrivateRoute';
 // import SpotDetails from './components/SpotDetails';
 
 const router = createBrowserRouter([
@@ -23,20 +25,25 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
-        loader:()=>fetch("http://localhost:5000/paradiceTours")
+        loader: () => fetch("http://localhost:5000/paradiceTours")
       },
       {
         path: "/allTouristsSpot",
         element: <AllTouristsSpot></AllTouristsSpot>,
-        loader:()=>fetch("http://localhost:5000/paradiceTours")
+        loader: () => fetch("http://localhost:5000/paradiceTours")
       },
       {
         path: "/addTouristsSpot",
-        element: <AddTouristsSpot></AddTouristsSpot>,
+        element: <PrivateRoute>
+          <AddTouristsSpot></AddTouristsSpot>
+        </PrivateRoute>,
       },
       {
         path: "/myList",
-        element: <MyList></MyList>,
+        element: <PrivateRoute>
+          <MyList></MyList>
+        </PrivateRoute>,
+
       },
       {
         path: "/login",
@@ -47,9 +54,16 @@ const router = createBrowserRouter([
         element: <Register></Register>,
       },
       {
+        path: "/updatepage/:id",
+        loader: ({ params }) => fetch(`http://localhost:5000/paradiceTours/${params.id}`),
+        element: <UpdatePage></UpdatePage>,
+      },
+      {
         path: "/item/:id",
-        loader:({params})=>fetch(`http://localhost:5000/paradiceTours/${params.id}`),       
-        element: <SpotDetails></SpotDetails>,
+        loader: ({ params }) => fetch(`http://localhost:5000/paradiceTours/${params.id}`),
+        element: <PrivateRoute>
+          <SpotDetails></SpotDetails>
+        </PrivateRoute>,
       },
 
     ],
