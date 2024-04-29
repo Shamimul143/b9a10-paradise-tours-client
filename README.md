@@ -1,12 +1,12 @@
-# Paradise-Tours
+# B9A10Type-01 Requirements
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Paradise-Tours
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
 Bullet Points
-1. 
+1. Responsive & Mobile-Friendly Design
+2. SEO Friendliness
+3. Smart Booking Process
+4. Social Media Integration
+5. Unlimited Travel Packages

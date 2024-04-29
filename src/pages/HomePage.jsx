@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import {useLoaderData } from "react-router-dom";
 import SpotItem from "../components/SpotItem";
 import Slider from "../components/Slider";
 import image1 from "../assets/images/ser-icon1@2x.png"
