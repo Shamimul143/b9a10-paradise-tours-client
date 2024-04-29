@@ -24,7 +24,7 @@ const UpdatePage = () => {
         const updatedSpot = { imageUrl, touristsSpotName, countryName, location, shortDescription, averageCost, seasonality, travelTime, totaVisitorsPerYear }
         console.log(updatedSpot);
 
-        fetch(`http://localhost:5000/paradiceTours/${_id}`, {
+        fetch(`https://b9a10-paradise-tours-server.vercel.app/paradiceTours/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

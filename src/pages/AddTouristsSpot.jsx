@@ -21,7 +21,7 @@ const AddTouristsSpot = () => {
         const addedSpot = { imageUrl, touristsSpotName, countryName, location, shortDescription, averageCost, seasonality, travelTime, totaVisitorsPerYear, email, name }
         console.log(addedSpot);
 
-        fetch("http://localhost:5000/paradiceTours", {
+        fetch("https://b9a10-paradise-tours-server.vercel.app/paradiceTours", {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

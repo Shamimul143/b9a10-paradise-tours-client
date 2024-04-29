@@ -25,12 +25,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
-        loader: () => fetch("http://localhost:5000/paradiceTours")
+        loader: () => fetch("https://b9a10-paradise-tours-server.vercel.app/paradiceTours")
       },
       {
         path: "/allTouristsSpot",
         element: <AllTouristsSpot></AllTouristsSpot>,
-        loader: () => fetch("http://localhost:5000/paradiceTours")
+        loader: () => fetch("https://b9a10-paradise-tours-server.vercel.app/paradiceTours")
       },
       {
         path: "/addTouristsSpot",
@@ -55,12 +55,12 @@ const router = createBrowserRouter([
       },
       {
         path: "/updatepage/:id",
-        loader: ({ params }) => fetch(`http://localhost:5000/paradiceTours/${params.id}`),
+        loader: ({ params }) => fetch(`https://b9a10-paradise-tours-server.vercel.app/paradiceTours/${params.id}`),
         element: <UpdatePage></UpdatePage>,
       },
       {
         path: "/item/:id",
-        loader: ({ params }) => fetch(`http://localhost:5000/paradiceTours/${params.id}`),
+        loader: ({ params }) => fetch(`https://b9a10-paradise-tours-server.vercel.app/paradiceTours/${params.id}`),
         element: <PrivateRoute>
           <SpotDetails></SpotDetails>
         </PrivateRoute>,

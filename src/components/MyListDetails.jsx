@@ -21,7 +21,7 @@ const MyListDetails = ({ item }) => {
             if (result.isConfirmed) {
 
 
-                fetch(`http://localhost:5000/paradiceTours/${_id}`, {
+                fetch(`https://b9a10-paradise-tours-server.vercel.app/paradiceTours/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

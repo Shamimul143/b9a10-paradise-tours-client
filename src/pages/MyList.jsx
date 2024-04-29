@@ -12,7 +12,7 @@ const MyList = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myItem/${user?.email}`)
+        fetch(`https://b9a10-paradise-tours-server.vercel.app/myItem/${user?.email}`)
             .then((res) => res.json())
             .then((data) => {
                 setItems(data);
