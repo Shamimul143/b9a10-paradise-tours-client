@@ -20,7 +20,7 @@ const MyList = () => {
     }, [user]);
 
     return (
-        <div>
+        <div className="max-w-7xl mx-auto"> 
             <h2 className="text-center bg-slate-100 text-2xl font-bold py-10 my-10">My List</h2>
             <div className="overflow-x-auto border-2">
                 <table className=''>

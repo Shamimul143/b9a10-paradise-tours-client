@@ -49,7 +49,7 @@ const MyListDetails = ({ item }) => {
                 <table>
                     <tbody>
                         {/* row 1 */}
-                        <tr className="flex justify-evenly pb-1 space-y-3 border-2 lg:w-[1200px]"> 
+                        <tr className="flex justify-evenly pb-1 space-y-3 border-2 lg:w-[1280px]"> 
                             <td>{touristsSpotName}</td>
                             <td>{countryName}</td>
                             <td>{location}</td>

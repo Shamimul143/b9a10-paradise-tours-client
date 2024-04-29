@@ -48,7 +48,7 @@ const UpdatePage = () => {
             })
     }
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen bg-base-200 max-w-7xl mx-auto">
             <div className=" flex-col lg:flex-row-reverse">
                 <div className="text-center lg:text-left my-5">
                     <h1 className="text-5xl font-bold">Update Tourists Spot!</h1>

@@ -6,7 +6,7 @@ const AllTouristsSpot = () => {
 
     const spotItem = useLoaderData()
     return (
-        <div>
+        <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-center my-10">All Tourists Spots</h2>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
             {

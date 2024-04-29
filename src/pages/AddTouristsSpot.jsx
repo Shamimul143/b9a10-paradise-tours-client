@@ -44,9 +44,9 @@ const AddTouristsSpot = () => {
     }
 
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen bg-base-200 py-10 ">
             <div className=" flex-col lg:flex-row-reverse">
-                <div className="text-center lg:text-left my-5">
+                <div className="text-center lg:text-left py-5">
                     <h1 className="text-5xl font-bold">Add Tourists Spot!</h1>
                 </div>
                 <div className="card shrink-0 w-full max-w-md shadow-2xl bg-base-100">
