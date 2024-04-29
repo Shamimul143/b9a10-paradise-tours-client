@@ -1,6 +1,8 @@
 # B9A10Type-01 Requirements
 
-Paradise-Tours
+ Name: Paradise-Tours
+ Live url: https://b9a10-paradise-tours.netlify.app/
+
 
 
 
